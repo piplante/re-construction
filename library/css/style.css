@@ -153,12 +153,6 @@ hr {
 /*
  * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
 */
-p {
-  -webkit-hyphens: auto;
-  -epub-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
-
 /*
  * Addresses margins set differently in IE6/7.
  */
@@ -510,15 +504,6 @@ some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
-  -ms-word-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  -webkit-hyphenate-before: 2;
-  -webkit-hyphenate-after: 3;
-  hyphenate-lines: 3;
   -webkit-font-feature-settings: "liga", "dlig";
   -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
@@ -982,14 +967,14 @@ textarea,
   padding: 0 12px;
   margin-bottom: 14px;
   font-size: 1em;
-  color: #5c6b80;
+  color: #323944;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #eaedf2;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1250,11 +1235,11 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #5c6b80;
-  background-color: #eaedf2;
+  color: #323944;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -1361,14 +1346,39 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
+.header-suite {
+  background: #fff; }
+
 .header {
   position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  width: 100%;
+  border-bottom: solid 2px #FFC600;
+  padding: 14px 0 8px 0;
+  color: #FFC600;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .header #inner-header {
+    position: relative; }
+    .header #inner-header #bloc-droite {
+      position: absolute;
+      right: 0;
+      top: 10px;
+      display: inline-block; }
+    .header #inner-header .bloc-droite-jaune {
+      color: #FFC600; }
+    .header #inner-header .bloc-droite-blanc {
+      color: #fff; }
 
 #logo {
-  margin: 0.75em 0; }
+  margin: 0 0 0 40px;
+  padding: 0;
+  font-size: 40px;
+  line-height: 40px; }
   #logo a {
-    color: #fff; }
+    color: #FFC600; }
 
 /*********************
 NAVIGATION STYLES
@@ -1414,19 +1424,15 @@ and more scalable.
 POSTS & CONTENT STYLES
 *********************/
 #content {
-  margin-top: 1.5em; }
+  margin-top: 60px; }
 
 .hentry {
   background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 1.5em;
-  border: 1px solid #ccc; }
+  margin-bottom: 1.5em; }
   .hentry header {
-    border-bottom: 1px solid #f8f9fa;
     padding: 1.5em; }
   .hentry footer {
-    padding: 1.5em;
-    border-top: 1px solid #f8f9fa; }
+    padding: 1.5em; }
     .hentry footer p {
       margin: 0; }
 
@@ -1578,10 +1584,10 @@ PAGE NAVI STYLES
       color: #fff; }
   .pagination .current {
     cursor: default;
-    color: #5c6b80; }
+    color: #323944; }
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
-      color: #5c6b80; }
+      color: #323944; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
@@ -1692,7 +1698,7 @@ COMMENT FORM STYLES
   font-style: italic;
   margin: 0; }
   .logged-in-as a {
-    color: #5c6b80; }
+    color: #323944; }
 
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
@@ -1756,13 +1762,29 @@ ACCUEIL
       display: table-cell;
       text-align: center;
       vertical-align: middle;
-      padding: 0 5% 0 5%; }
+      padding: 0 7% 0 7%; }
       #hero #hero-content #trois-blocs .blocs-accueil {
         display: inline-block;
+        vertical-align: top;
         background: rgba(0, 0, 0, 0.5);
-        margin: 0 4% 0 4%;
-        width: 24%;
-        border: solid 2px #FFC600; }
+        margin: 0 4% 20px 4%;
+        width: 84%;
+        border: solid 2px #FFC600;
+        text-align: center;
+        padding: 8px 5px 8px 5px;
+        font-size: bold; }
+        #hero #hero-content #trois-blocs .blocs-accueil h3 {
+          color: #FFC600;
+          font-size: 22px;
+          line-height: 20px;
+          margin: 0;
+          padding: 0; }
+        #hero #hero-content #trois-blocs .blocs-accueil p {
+          margin: 0;
+          padding: 0;
+          font-size: 20px;
+          line-height: 20px;
+          font-style: italic; }
 
 /*********************
 FOOTER STYLES
@@ -1893,6 +1915,21 @@ you can add resource intensive styles.
   /*********************
   HEADER STYLES
   *********************/
+  /*********************
+  ACCUEIL
+  *********************/
+  #hero #hero-content #trois-blocs .blocs-accueil {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 4% 0 4%;
+    width: 24%; }
+    #hero #hero-content #trois-blocs .blocs-accueil h3 {
+      font-size: 28px;
+      line-height: 30px; }
+    #hero #hero-content #trois-blocs .blocs-accueil p {
+      font-size: 26px;
+      line-height: 30px; }
+
   /*********************
   NAVIGATION STYLES
   *********************/

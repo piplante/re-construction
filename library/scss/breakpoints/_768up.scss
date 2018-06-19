@@ -35,6 +35,45 @@ HEADER STYLES
 
 	#logo {}
 
+
+/*********************
+ACCUEIL
+*********************/
+#hero{
+	
+
+	#hero-content{
+	
+		
+		#trois-blocs {
+
+
+			.blocs-accueil {
+				display: inline-block;
+				vertical-align: top;
+							
+				margin: 0 4% 0 4%;
+				width: 24%;
+				
+				h3 {
+
+					font-size: 28px;
+					line-height: 30px;
+				
+				}
+
+				p {
+
+					font-size: 26px;
+					line-height: 30px;
+				}
+
+			}
+		}
+
+	}
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -284,4 +323,5 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
+
 
