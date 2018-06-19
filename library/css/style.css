@@ -1376,7 +1376,8 @@ HEADER STYLES
   margin: 0 0 0 40px;
   padding: 0;
   font-size: 40px;
-  line-height: 40px; }
+  line-height: 40px; 
+font-style: italic;}
   #logo a {
     color: #FFC600; }
 
@@ -1778,7 +1779,7 @@ ACCUEIL
           font-size: 22px;
           line-height: 20px;
           margin: 0;
-          padding: 0; }
+          padding: 0; font-style: italic;}
         #hero #hero-content #trois-blocs .blocs-accueil p {
           margin: 0;
           padding: 0;
